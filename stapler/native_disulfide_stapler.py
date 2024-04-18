@@ -16,7 +16,7 @@ class NativeDisulfideStapler(Stapler):
         minimum_sequence_distance=1,
         maximum_neighborhood_distance=20.0,
         hash_function_kwargs={'cart_resl' : 1.0, 'ori_resl' : 15.0, 'cart_bound' : 512.0},
-        hash_table_kwargs={'key_type' : np.dtype('i8'), 'value_type': np.dtype('i4'), 'filename': pkg_resources.resource_filename('stapler', 'hash_tables/default_native_disulfide.bin')}
+        hash_table_kwargs={'key_type' : np.dtype('i8'), 'value_type': np.dtype('i4'), 'filename': pkg_resources.resource_filename('stapler', 'hash_tables/default_native_disulfide_helicon_base_case.bin')}
     ):
 
         super(NativeDisulfideStapler, self).__init__(

@@ -29,7 +29,7 @@ native_disulfide_stapler = NativeDisulfideStapler(
     minimum_sequence_distance=4
 )
 
-for pdb in glob.glob('_inputs/*.pdb'):
+for pdb in glob.glob('practice/*.pdb'):
     pdb_filename = os.path.splitext(os.path.basename(pdb))[0]
 
     pose = pyrosetta.pose_from_file(pdb)
